@@ -22,8 +22,20 @@ alt + m
 alt + f
   bspc node -t '~fullscreen'
 
+alt + Equals
+  wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+
+alt + -
+  wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+
 alt + {1-9}
   bspc desktop -f focused:'^{1-9}'
 
 shift + alt + {1-9}
   bspc node -d ^{1-9}
+
+alt + e
+  setxkbmap us
+
+alt + s
+  setxkbmap si
