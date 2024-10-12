@@ -1,0 +1,30 @@
+// Basic configuration
+theme "catppuccin-frappe"
+default_layout "compact"
+session_serialization false
+on_force_close "quit"
+pane_frames false
+
+// UI Config
+ui {
+    pane_frames {
+        rounded_corners true
+        hide_session_name true
+    }
+}
+
+// Keybindings
+keybinds {
+    normal {
+        bind "Esc" {
+            SwitchToMode "pane";
+        }
+    }
+
+    locked {
+        bind "Ctrl l" { MoveFocus "Right"; }
+        bind "Ctrl h" { MoveFocus "Left"; }
+        bind "Ctrl j" { MoveFocus "Down"; }
+        bind "Ctrl k" { MoveFocus "Up"; }
+    }
+}

@@ -1,0 +1,10 @@
+theme = "catppuccin_macchiato"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.normal."space"]
+w = { c = ":quit" }
+t = { n = ":sh fish ~/.config/helix/spawn_term.fish" }

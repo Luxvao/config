@@ -1,0 +1,47 @@
+alt + @space
+  rofi -show drun
+
+alt + Escape
+  pkill -USR1 -x sxhkd
+
+alt + Return
+  alacritty
+
+alt + f
+  bspc node -t '~fullscreen'
+
+alt + g
+  bspc node -t floating
+
+alt + m
+  kill bspwm
+
+alt + q
+  bspc node -c
+
+alt + s
+  bspc node -g sticky
+
+alt + shift + e
+  setxkbmap us
+
+alt + shift + r
+  bspc {wm -r}
+
+alt + shift + s
+  setxkbmap si
+
+alt + t
+  bspc node -t tiled
+
+alt + {1-9}
+  bspc desktop -f focused:'^{1-9}'
+
+alt + {k, j, h, l}
+  bspc node -f {north, south, west, east}
+
+shift + alt + {1-9}
+  bspc node -d ^{1-9}
+
+alt + e
+    emacsclient -c -a 'emacs'
