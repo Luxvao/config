@@ -1,4 +1,4 @@
-import = [
+general.import = [
   "~/.config/alacritty/catppuccin-macchiato.toml"
 ]
 
@@ -21,7 +21,7 @@ style = "MediumItalic"
 family = "JetBrainsMono Nerd Font"
 style = "Medium"
 
-[shell]
+[terminal.shell]
 program = "/usr/bin/zellij"
 
 [window]
